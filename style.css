@@ -207,6 +207,47 @@ body{
     width: calc(33.333% - 40px);
 }
 
+.reserve {
+    display: grid;
+    grid-template-columns: 405px 1fr;
+    grid-template-areas: 
+    "checkbox scheme"
+    "order legend";
+    gap: 65px 11%;
+    width: 100%;
+}
+
+.reserve__checkbox{
+    grid-area: "checkbox";
+    background-color: aqua;
+}
+.reserve__scheme{
+    grid-area: "scheme";
+    background-color: aquamarine;
+}
+.reserve__order{
+    grid-area: "order";
+    background-color: aliceblue;
+}
+.reserve__legend{
+    grid-area: "legend";
+    background-color: orange;
+}
+
+.section-title{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F1E1E;
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 533px;
+    height: 46px;
+    left: 694px;
+    top: 354px;
+}
+
 .main {
     flex: 0 auto;
 }
